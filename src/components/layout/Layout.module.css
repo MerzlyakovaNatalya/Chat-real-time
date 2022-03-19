@@ -1,0 +1,23 @@
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+    background-color: #3b5995;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .a {
+    color: rgb(241, 246, 250);
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+main {
+  max-width: 1000px;
+  
+}

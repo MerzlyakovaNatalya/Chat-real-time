@@ -1,0 +1,10 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.link{
+    color: rgb(12, 19, 107);
+    text-decoration: none;
+    padding: 10px;
+}

@@ -1,0 +1,1 @@
+export const USER_AUTHOR = "USER_AUTHOR"
