@@ -34,7 +34,7 @@ export const MessageList = () => {
         <div>
             <form onSubmit={onSubmitMessage}>
             <input type="text" onChange={onChangeMessageInput} value={value} placeholder="Cообщение" ref={ref}></input>
-            <button onClick={focus}>Написать</button>
+            <button onClick={focus}>Напишите сообщение</button>
            <button type="submit">Отправить</button>
             </form>
             <div>
