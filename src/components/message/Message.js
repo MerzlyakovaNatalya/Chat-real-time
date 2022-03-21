@@ -1,6 +1,8 @@
-export const Message = (props) => {
+export const Message = ({messageList}) => {
 
-    return (
-        <p>{props.author} - {props.text}</p>
-    )
+    return <div>
+        { messageList.map((item) => {
+            <p>{item.author} - {item.text}</p>
+        })}
+    </div>
 }
