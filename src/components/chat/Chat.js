@@ -4,8 +4,6 @@ import style from "./Chats.module.css";
 import { Outlet } from "react-router-dom";
 
 export const Chat = () => {
-  useDispatch();
-
   return (
     <>
       <div className={style.wrap}>
