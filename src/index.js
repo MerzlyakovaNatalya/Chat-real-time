@@ -7,15 +7,32 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./store/index";
+import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
+
+const Global = createGlobalStyle`
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+`;
+
+const theme = {
+  colors: {
+    primary: "rgb(48, 48, 48)",
+    secondary: "white",
+  },
+};
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate persistor={persistor} loading={null}>
         <BrowserRouter>
-          <Provider store={store}>
+          <ThemeProvider theme={theme}>
+            <Global />
             <App />
-          </Provider>
+          </ThemeProvider>
         </BrowserRouter>
       </PersistGate>
     </Provider>
