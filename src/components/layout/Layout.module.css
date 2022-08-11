@@ -7,8 +7,10 @@
     background-color: #3b5995;
     font-size: calc(10px + 2vmin);
     color: white;
-    margin: 10px;
+    margin-top: 10px;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .a {
