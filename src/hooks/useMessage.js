@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 export const useMessage = () => {
   const ref = useRef(null);
@@ -21,7 +21,7 @@ export const useMessage = () => {
 
   const onSubmitMessage = (event) => {
     event.preventDefault();
-    sendMessage("user", value);
+    sendMessage("Your message", value);
     resetForm();
   };
 
@@ -29,8 +29,7 @@ export const useMessage = () => {
     setValue(event.target.value);
   };
 
-  const focus = (event) => {
-    event.preventDefault();
+  const focus = () => {
     ref.current.focus();
   };
 

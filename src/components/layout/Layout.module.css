@@ -23,3 +23,10 @@ main {
   max-width: 1000px;
   
 }
+
+.wrapper_footer {
+  height: 300px;
+  font-size: calc(10px + 2vmin);
+  background-color: #3b5995;
+  padding: 10px;
+}

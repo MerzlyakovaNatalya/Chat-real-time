@@ -8,7 +8,7 @@ const AppWrapper = styled.div`
   min-height: 100vh;
   padding: 2rem;
 `;
-//background: ${(props) => props.theme.colors.primary};
+
 function App() {
   return (
     <>
