@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./store/index";
-import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 
 const Global = createGlobalStyle`
 * {
@@ -19,7 +19,7 @@ const Global = createGlobalStyle`
 
 const theme = {
   colors: {
-    primary: "rgb(48, 48, 48)",
+    primary: "rgb(86 85 134)",
     secondary: "white",
   },
 };

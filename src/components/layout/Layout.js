@@ -1,7 +1,7 @@
 import style from "./Layout.module.css";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
-import { IoMoonOutline, IoMoon } from "react-icons/io5";
+import { IoMoonOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
 
 export const Header = () => {
@@ -39,8 +39,8 @@ export const Header = () => {
           <Outlet></Outlet>
         </main>
         <footer>
-          <div>
-            <p>Подвал сайта</p>
+          <div className={style.wrapper_footer}>
+            <p>FOOTER</p>
           </div>
         </footer>
       </div>

@@ -1,16 +1,10 @@
-import style from "./MessageList.modul.css";
+import style from "./MessageList.module.css";
 import { useEffect } from "react";
-import {
-  useParams,
-  useLocation,
-  useNavigate,
-  Navigate,
-} from "react-router-dom";
-import { useMessage } from "../../hooks/useForma";
+import { useParams } from "react-router-dom";
+import { useMessage } from "../../hooks/useMessage";
 import { Message } from "../message/Message";
 
 export const MessageList = () => {
-  const navigate = useNavigate();
   const { chatId } = useParams();
   const [
     messageList,
@@ -18,38 +12,41 @@ export const MessageList = () => {
     ref,
     { onSubmitMessage, onChangeMessageInput, sendMessage, focus },
   ] = useMessage();
-  console.log(`useaparams_${chatId}`);
 
   useEffect(() => {
+    focus();
     if (messageList.length === 0) {
       return;
     }
 
     const tail = messageList[messageList.length - 1];
+
     if (tail.author === "bot") {
       return;
     }
 
     //sendMessage("bot", "hello");
-    const timeout = setTimeout(sendMessage, 1000, "bot", "hello");
+    const timeout = setTimeout(sendMessage, 1100, "bot", "hello");
 
     return () => clearTimeout(timeout);
   }, [messageList]);
 
   return (
     <div className={style.wrap}>
+      <Message messageList={messageList} />
       <form onSubmit={onSubmitMessage}>
-        <input
+        <textarea
           type="text"
+          ref={ref}
+          rows="10"
+          cols="45"
+          name="text"
           onChange={onChangeMessageInput}
           value={value}
-          placeholder="Cообщение"
-          ref={ref}
-        ></input>
-        <button onClick={focus}>Напишите сообщение</button>
-        <button type="submit">Отправить</button>
+          placeholder="Message"
+        ></textarea>
+        <button type="submit">Send {chatId}</button>
       </form>
-      <Message messageList={messageList} />
     </div>
   );
 };

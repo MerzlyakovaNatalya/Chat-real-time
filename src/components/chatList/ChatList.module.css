@@ -1,6 +1,36 @@
 
-.link{
-    color: rgb(12, 19, 107);
-    text-decoration: none;
-    padding: 10px;
+.wrap {
+  display: flex;
+  color: rgb(12, 19, 107);
 }
+
+.svg {
+  margin-top: 13px;
+  margin-left: 30px;
+  color: #8ea1b0;
+  cursor: pointer;
+}
+
+.link{
+  color: rgb(12, 19, 107);
+  text-decoration: none;
+  padding: 10px;
+}
+
+.active {
+  font-weight: bold;
+  }
+
+.button {
+  border: 0;
+  padding: 7px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #5d4b94;
+  font-weight: bold;
+  }
+
+.button:hover {
+  cursor: pointer;
+  }
+
