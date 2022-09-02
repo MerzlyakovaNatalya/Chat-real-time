@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 import { IoMoonOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
 
-export const Header = () => {
+export const Layout = () => {
   const [theme, setTheme] = useState("light");
 
   const toggleTheme = () => {
