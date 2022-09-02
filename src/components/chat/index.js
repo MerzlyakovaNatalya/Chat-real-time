@@ -1,4 +1,4 @@
-import { ChatList } from "../../components/chatList/ChatList";
+import { ChatList } from "../chatList";
 import { CHATS } from "../../helpers/index";
 import { Outlet } from "react-router-dom";
 import { Title } from "./Title";
