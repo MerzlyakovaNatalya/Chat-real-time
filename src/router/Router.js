@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "../components/home";
 import { Profile } from "../components/profile";
 import { Chat } from "../components/chat";
+import { Animals } from "../components/animals";
 import { MessagesList } from "../components/messageList/index";
 
 export function Router() {
@@ -15,6 +16,7 @@ export function Router() {
           <Route path="chat/*" element={<Chat />}>
             <Route path=":chatId" element={<MessagesList />} />
           </Route>
+          <Route path="animals" element={<Animals />} />
           <Route path="*" element={"Ошибка"} />
         </Route>
       </Routes>

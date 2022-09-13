@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import style from "./ChatList.module.css";
 import { Wrap } from "./Wrap";
 import { ImBin2 } from "react-icons/im";
-import { withChatList } from "../../hocs/index";
+import { withChatList } from "../../hocs";
 
 const ChatListRender = ({ list, onDelete, onCreate }) => {
   return (

@@ -29,6 +29,9 @@ export const Layout = () => {
             <Link to="/chat" className={style.a}>
               CHATS
             </Link>
+            <Link to="/animals" className={style.a}>
+              ANIMALS
+            </Link>
           </div>
           <div className={style.wrapper_icon} onClick={toggleTheme}>
             <IoMoonOutline />
