@@ -26,11 +26,14 @@ export const Layout = () => {
             <Link to="/profile" className={style.a}>
               PROFILE
             </Link>
-            <Link to="/chat" className={style.a}>
-              CHATS
-            </Link>
             <Link to="/animals" className={style.a}>
               ANIMALS
+            </Link>
+            <Link to="/chat" className={style.a}>
+              CHAT_REDUX
+            </Link>
+            <Link to="/chatFirebase" className={style.a}>
+              CHAT_FIREBASE
             </Link>
           </div>
           <div className={style.wrapper_icon} onClick={toggleTheme}>

@@ -5,6 +5,7 @@ import { Profile } from "../components/profile";
 import { Chat } from "../components/chat";
 import { Animals } from "../components/animals";
 import { MessagesList } from "../components/messageList/index";
+import { ChatFirebase } from "../components/chatFirebase/index";
 
 export function Router() {
   return (
@@ -17,6 +18,7 @@ export function Router() {
             <Route path=":chatId" element={<MessagesList />} />
           </Route>
           <Route path="animals" element={<Animals />} />
+          <Route path="chatFirebase/*" element={<ChatFirebase />} />
           <Route path="*" element={"Ошибка"} />
         </Route>
       </Routes>
