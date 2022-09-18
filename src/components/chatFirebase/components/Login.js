@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import firebase from "firebase";
+import firebase from "firebase/app";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";

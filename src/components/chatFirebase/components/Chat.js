@@ -5,7 +5,7 @@ import { Avatar, Button, Container, Grid } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import Loader from "./Loader";
-import firebase from "firebase";
+import firebase from "firebase/app";
 
 export const Chat = () => {
   const { auth, firestore } = useContext(Context);
