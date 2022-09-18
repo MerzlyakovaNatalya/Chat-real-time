@@ -3,7 +3,7 @@ import React, { createContext } from "react";
 import "./App.css";
 import { Router } from "./router/Router";
 import styled from "styled-components";
-import firebase from "firebase";
+import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
