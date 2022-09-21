@@ -1,7 +1,7 @@
-import React from 'react';
-import style from './Message.module.css';
+import React from "react";
+import style from "./Message.module.css";
 
-const Messages = ({ messageList }) => {
+export const Message = ({ messageList }) => {
   return (
     <>
       <div>
@@ -10,12 +10,8 @@ const Messages = ({ messageList }) => {
             <p>{item.author}</p>
             <p>{item.text}</p>
           </div>
-        )      
-        )}
+        ))}
       </div>
     </>
   );
 };
-
-export const Message = React.memo(Messages);
-

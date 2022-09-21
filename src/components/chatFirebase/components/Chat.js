@@ -31,12 +31,8 @@ export const Chat = () => {
   }
 
   return (
-    <Container>
-      <Grid
-        container
-        justify={"center"}
-        style={{ height: window.innerHeight - 55, marginTop: 20 }}
-      >
+    <Container style={{ padding: 0 }}>
+      <Grid container justify={"center"} style={{ marginTop: 20 }}>
         <div
           style={{
             width: "100%",
@@ -47,6 +43,7 @@ export const Chat = () => {
         >
           {messages.map((message) => (
             <div
+              key={message.uid}
               style={{
                 margin: 10,
                 border:
@@ -74,13 +71,14 @@ export const Chat = () => {
         >
           <TextField
             fullWidth
-            rowsMax={2}
+            maxRows={2}
             variant={"outlined"}
             value={value}
             onChange={(e) => setValue(e.target.value)}
+            placeholder="write message"
           />
           <Button onClick={sendMessage} variant={"outlined"}>
-            Отправить
+            send
           </Button>
         </Grid>
       </Grid>

@@ -1,20 +1,22 @@
 import style from "./MessageList.module.css";
-import { useNavigate } from "react-router-dom";
 import { Message } from "../message";
 import { MessageInput } from "../messageInput";
 import { withChatMessages } from "../../hocs/withChatMessages";
 
-const MessagesRender = ({ messageList, hasChat, onSendMessage }) => {
-  const navigate = useNavigate();
-
-  if (!hasChat) {
-    return navigate("/chats");
-  }
-
+const MessagesRender = ({
+  messageList,
+  onSendMessage,
+  onChangeMessageInput,
+  value,
+}) => {
   return (
     <div className={style.wrap}>
       <Message messageList={messageList} />
-      <MessageInput onSendMessage={onSendMessage} />
+      <MessageInput
+        onSendMessage={onSendMessage}
+        onChangeMessageInput={onChangeMessageInput}
+        value={value}
+      />
     </div>
   );
 };

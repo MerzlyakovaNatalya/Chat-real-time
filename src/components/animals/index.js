@@ -15,7 +15,6 @@ export const AnimalsRender = ({ data, isError, isLoading, getData }) => {
     <div className={style.wrap}>
       <h1 className={style.title}>ANIMALS</h1>
       {!isError && (
-        //<button type="button" class="btn btn-primary btn-lg btn-block"></button>
         <Button
           type="button"
           onClick={getData}

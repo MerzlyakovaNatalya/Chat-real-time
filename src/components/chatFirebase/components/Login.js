@@ -17,20 +17,16 @@ export const Login = () => {
 
   return (
     <>
-      <Container>
-        <Grid
-          container
-          style={{ height: window.innerHeight - 50 }}
-          alignItems={"center"}
-          justify={"center"}
-        >
+      <Container style={{ padding: 0 }}>
+        <Grid container alignItems={"center"} justify={"center"}>
           <Grid
-            style={{ width: 400, background: "lightgray" }}
+            mt={4}
+            style={{ width: 300, background: "lightgray" }}
             container
             alignItems={"center"}
             direction={"column"}
           >
-            <Box p={5}>
+            <Box p={4}>
               <Button onClick={login} variant={"outlined"}>
                 Войти с помощью Google
               </Button>
