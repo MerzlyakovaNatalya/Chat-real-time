@@ -1,10 +1,6 @@
 import { getRandomAnimals } from "../store/animals/action";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  getAnimalsData,
-  getAnimalsError,
-  getAnimalsLoading,
-} from "../store/animals/selectors";
+import { getAnimalsData } from "../store/animals/selectors";
 
 export const withAnimals = (Component) => {
   return (props) => {

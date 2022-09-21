@@ -17,11 +17,11 @@ export const Navbar = () => {
         <Grid container justify={"flex-end"}>
           {user ? (
             <Button onClick={() => auth.signOut()} variant={"outlined"}>
-              Выйти
+              Go out
             </Button>
           ) : (
-            <Link to="/chatFirebase">
-              <Button variant={"outlined"}>Логин</Button>
+            <Link to="/chatFirebase" style={{ textDecoration: "none" }}>
+              <Button variant={"outlined"}>login</Button>
             </Link>
           )}
         </Grid>

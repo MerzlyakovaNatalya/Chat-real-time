@@ -3,6 +3,7 @@ import style from "./ChatList.module.css";
 import { Wrap } from "./Wrap";
 import { ImBin2 } from "react-icons/im";
 import { withChatList } from "../../hocs";
+import { chat } from "../../helpers/index";
 
 const ChatListRender = ({ list, onDelete, onCreate }) => {
   return (
@@ -16,7 +17,7 @@ const ChatListRender = ({ list, onDelete, onCreate }) => {
             <ImBin2 className={style.svg} onClick={() => onDelete(item.id)} />
           </div>
         ))}
-        <button className={style.button} onClick={onCreate}>
+        <button className={style.button} onClick={() => onCreate(chat)}>
           Create chat
         </button>
       </Wrap>
