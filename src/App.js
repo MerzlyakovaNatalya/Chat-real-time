@@ -6,6 +6,7 @@ import styled from "styled-components";
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const AppWrapper = styled.div`
   width: 100%;
@@ -25,7 +26,7 @@ firebase.initializeApp({
 
 export const Context = createContext(null);
 
-const auth = firebase.auth();
+export const auth = firebase.auth();
 const firestore = firebase.firestore();
 
 function App() {

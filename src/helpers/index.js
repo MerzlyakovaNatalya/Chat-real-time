@@ -10,12 +10,12 @@ export const createMessage = (author, text) => ({
 
 export const chat = {
   id: nanoid(),
-  name: "chatName",
+  name: "open_chat",
 };
 
 const createChats = (i) => ({
   id: nanoid(),
-  name: "chatName",
+  name: "open_chat",
 });
 
 export const CHATS = Array.from({ length: 5 }).map((_, i) => createChats(i));

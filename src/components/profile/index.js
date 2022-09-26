@@ -1,18 +1,43 @@
+import React, { useEffect, useContext } from "react";
+import { Context } from "../../App";
 import style from "./Profile.module.css";
-import { useDispatch, useSelector } from "react-redux";
-import { TOGGLE_SHOW_PROFILE } from "../../store/profile/action"
+import { Link } from "react-router-dom";
+import { ProfileRoute } from "./Route";
+import Button from "react-bootstrap/Button";
 
 export const Profile = () => {
-    
-    const dispatch = useDispatch();
-    const isShow = useSelector((state) => state.isShow);
-
-    return <>
-          <h1 className={style.title}>PROFILE</h1>
-          <input type="checkbox" checked={isShow} onChange={() => {
-              dispatch({
-                  type: TOGGLE_SHOW_PROFILE
-              })
-          }} />
+  const { auth } = useContext(Context);
+  return (
+    <>
+      <h1 className={style.title}>PROFILE</h1>
+      <Link to="/profile/signUp" className={style.a}>
+        <Button
+          variant="light"
+          style={{ boxShadow: "3px 3px 3px blue", marginRight: 8 }}
+        >
+          SignUp
+        </Button>
+      </Link>
+      <Link to="/profile/login">
+        <Button
+          type="button"
+          variant="light"
+          style={{ boxShadow: "3px 3px 3px blue" }}
+        >
+          Login
+        </Button>
+      </Link>
+      <Link to="/profile/signUp">
+        <Button
+          type="button"
+          variant="light"
+          style={{ boxShadow: "3px 3px 3px blue", marginLeft: 30 }}
+          onClick={() => auth.signOut()}
+        >
+          Go out
+        </Button>
+      </Link>
+      <ProfileRoute />
     </>
+  );
 };
