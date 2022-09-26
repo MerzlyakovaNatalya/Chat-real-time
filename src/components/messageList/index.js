@@ -9,6 +9,7 @@ const MessagesRender = ({
   onChangeMessageInput,
   value,
 }) => {
+  console.log(messageList);
   return (
     <div className={style.wrap}>
       <Message messageList={messageList} />

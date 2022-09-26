@@ -30,6 +30,10 @@ export const Chat = () => {
     return <Loader />;
   }
 
+  if (user === null) {
+    return null;
+  }
+
   return (
     <Container style={{ padding: 0 }}>
       <Grid container justify={"center"} style={{ marginTop: 20 }}>
@@ -41,7 +45,7 @@ export const Chat = () => {
             boxShadow: "0px 5px 10px 0px rgba(0, 0, 0, 0.5)",
           }}
         >
-          {messages.map((message) => (
+          {messages?.map((message) => (
             <div
               key={message.uid}
               style={{
