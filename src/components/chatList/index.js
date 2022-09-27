@@ -4,12 +4,8 @@ import { Wrap } from "./Wrap";
 import { ImBin2 } from "react-icons/im";
 import { withChatList } from "../../hocs";
 import { chat } from "../../helpers/index";
-import { useEffect } from "react";
 
 const ChatListRender = ({ list, onDelete, onCreate }) => {
-  //useEffect(() => {
-  //  return localStorage.clear();
-  //});
   return (
     <>
       <Wrap>

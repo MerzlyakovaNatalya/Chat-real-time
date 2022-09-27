@@ -2,7 +2,6 @@ import { Layout } from "../components/layout";
 import { Routes, Route } from "react-router-dom";
 import { Home } from "../components/home";
 import { Profile } from "../components/profile";
-import { ProfileRoute } from "../components/profile/Route";
 import { Chat } from "../components/chat";
 import { Animals } from "../components/animals";
 import { MessagesList } from "../components/messageList/index";

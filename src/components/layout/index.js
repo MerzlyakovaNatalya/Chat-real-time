@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { IoMoonOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Layout = () => {
   const [theme, setTheme] = useState("light");

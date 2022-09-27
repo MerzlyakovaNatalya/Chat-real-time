@@ -13,6 +13,7 @@ export const withAnimals = (Component) => {
     const getData = () => {
       dispatch(getRandomAnimals);
     };
+
     return (
       <Component
         {...props}

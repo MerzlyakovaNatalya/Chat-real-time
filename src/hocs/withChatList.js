@@ -4,7 +4,6 @@ import { getChatList } from "../store/chats/selectors";
 import { removeChat } from "../store/chats/action";
 import { removeMessagesByChatID } from "../store/messages/action";
 import { useNavigate } from "react-router-dom";
-import React, { useCallback } from "react";
 
 export const withChatList = (Component) => {
   return (props) => {
@@ -12,10 +11,9 @@ export const withChatList = (Component) => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    const onCreate = useCallback((chat) => {
+    const onCreate = (chat) => {
       dispatch(createChat(chat));
-    }, []);
-    //window.location.reload();
+    };
 
     const onDelete = (chatId) => {
       dispatch(removeChat(chatId));
