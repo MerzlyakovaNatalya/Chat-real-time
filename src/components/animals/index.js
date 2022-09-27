@@ -9,6 +9,7 @@ import { Loader } from "../loader";
 export const AnimalsRender = ({ data, isError, isLoading, getData }) => {
   useEffect(() => {
     getData();
+    // eslint-disable-next-line
   }, []);
 
   return (

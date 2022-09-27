@@ -23,7 +23,7 @@ export const SignUp = () => {
 
     try {
       await auth.createUserWithEmailAndPassword(email, password);
-      navigate("/profile");
+      navigate("/profile/profileUser");
     } catch (e) {
       setError(e);
     }
@@ -31,7 +31,7 @@ export const SignUp = () => {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <h1>Sign up</h1>
+      <h4 style={{ marginTop: 50, color: "rgb(86 85 134)" }}>Sign up</h4>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control

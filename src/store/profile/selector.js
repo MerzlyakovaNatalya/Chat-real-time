@@ -1,2 +1,2 @@
-export const getUser = (state) => state.user.user;
-export const getIsAuth = (state) => state.user.user !== null;
+export const getUser = (state) => state.profile.user;
+export const getIsAuth = (state) => state.profile.user !== null;

@@ -14,6 +14,7 @@ export const PostsPage = () => {
 
   useEffect(() => {
     dispatch(postsReducer.actions.getDataWithThunk);
+    // eslint-disable-next-line
   }, []);
 
   return (

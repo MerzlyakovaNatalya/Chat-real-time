@@ -19,13 +19,12 @@ export const Login = () => {
   };
 
   const handleSubmit = async (e) => {
-    console.log(email, password);
     e.preventDefault();
 
     try {
       await auth.signInWithEmailAndPassword(email, password);
 
-      navigate("/profile");
+      navigate("/profile/profileUser");
     } catch (e) {
       setError(e);
     }

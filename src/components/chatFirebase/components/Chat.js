@@ -45,9 +45,9 @@ export const Chat = () => {
             boxShadow: "0px 5px 10px 0px rgba(0, 0, 0, 0.5)",
           }}
         >
-          {messages?.map((message) => (
+          {messages?.map((message, index) => (
             <div
-              key={message.uid}
+              key={index}
               style={{
                 margin: 10,
                 border:
