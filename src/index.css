@@ -7,10 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--colors-text);
   background-color: var(--colors-bg);
-  background: -moz-radial-gradient(center, ellipse cover, #0043ff0d, #edcfff);
-  background: -webkit-linear-gradient(top, #0043ff0d, #edcfff);
-  background: -o-linear-gradient(top, #0043ff0d, #edcfff);
-  background: -ms-linear-gradient(top, #0043ff0d, #edcfff);
 }
 
 code {

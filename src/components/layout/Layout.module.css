@@ -1,6 +1,9 @@
 .wrap {
   max-width: 1000px;
   margin: 0 auto;
+  background: linear-gradient(
+    -45deg
+    , #52eee01c, #a53ce738, #23a6d526, #23a4d52b);
 }
 
 .header {
@@ -23,11 +26,7 @@
 
 .main {
   max-width: 1000px;
-  background: #0043ff08;
-  background: -moz-radial-gradient(center, ellipse cover, #0043ff0d, #edcfff);
-  background: -webkit-linear-gradient(top, #0043ff0d, #edcfff);
-  background: -o-linear-gradient(top, #0043ff0d, #edcfff);
-  background: -ms-linear-gradient(top, #0043ff0d, #edcfff);
+ /* background: #0043ff08;*/
 }
 
 .wrapper_footer {
