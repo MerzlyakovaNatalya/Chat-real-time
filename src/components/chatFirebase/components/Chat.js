@@ -57,7 +57,7 @@ export const Chat = () => {
                 marginLeft: user.uid === message.uid ? "auto" : "10px",
                 width: "fit-content",
                 padding: 5,
-                background: "white",
+                color: "var(--colors-text)",
               }}
             >
               <Grid container>
