@@ -2,6 +2,7 @@
 .wrap {
   display: flex;
   color: rgb(12, 19, 107);
+  padding-left: 10px;
 }
 
 .svg {

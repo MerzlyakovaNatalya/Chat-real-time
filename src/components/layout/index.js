@@ -34,7 +34,7 @@ export const Layout = () => {
               CHAT_REDUX
             </Link>
             <Link to="/chatFirebase" className={style.a}>
-              CHAT_FIREBASE
+              CHAT_REAL_TIME
             </Link>
           </div>
           <div className={style.wrapper_icon} onClick={toggleTheme}>
@@ -42,7 +42,7 @@ export const Layout = () => {
             {theme} theme
           </div>
         </header>
-        <main>
+        <main className={style.main}>
           <Outlet></Outlet>
         </main>
         <footer>
