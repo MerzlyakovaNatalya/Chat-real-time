@@ -52,11 +52,12 @@ export const Chat = () => {
                 margin: 10,
                 border:
                   user.uid === message.uid
-                    ? "2px solid green"
-                    : "2px dashed red",
+                    ? "2px solid #b400ff"
+                    : "2px dashed #6200ff",
                 marginLeft: user.uid === message.uid ? "auto" : "10px",
                 width: "fit-content",
                 padding: 5,
+                background: "white",
               }}
             >
               <Grid container>
