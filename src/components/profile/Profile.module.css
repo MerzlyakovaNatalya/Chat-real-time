@@ -1,4 +1,8 @@
 .title {
     color: rgb(86 85 134);
-    margin-top: 40px; 
+    padding-top: 40px; 
+}
+.wrap {
+    padding-left: 10px;
+    padding-bottom: 20px;
 }

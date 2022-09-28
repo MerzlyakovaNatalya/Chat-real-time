@@ -21,7 +21,8 @@ export const Profile = () => {
 
   return (
     <>
-      <h1 className={style.title}>PROFILE</h1>
+    <div className={style.wrap}>
+    <h1 className={style.title}>PROFILE</h1>
       <Link to="/profile/signUp" className={style.a}>
         <Button
           variant="light"
@@ -53,6 +54,7 @@ export const Profile = () => {
       {
       user && <ProfileUser />
     }
+    </div>
     </>
   );
 };
