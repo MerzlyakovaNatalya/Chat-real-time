@@ -12,3 +12,8 @@
 .text {
     width: 10%;
 }
+ @media(max-width: 800px) {
+    .wrap  {
+        margin: 10px;
+    }
+ }
