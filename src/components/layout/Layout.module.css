@@ -49,3 +49,10 @@
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 500px) {
+  .a  {
+    font-size: 12px;
+    padding-right: 10px;
+  }
+}
