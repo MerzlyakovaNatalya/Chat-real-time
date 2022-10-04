@@ -33,3 +33,10 @@ input[type=text]::-webkit-input-placeholder {
    textarea:focus {outline: 0;}
 
    input:focus {outline: 0;}
+
+   @media(max-width: 800px) {
+    .wrap {
+        width: 100%;
+        box-shadow: none;
+    }
+   }
