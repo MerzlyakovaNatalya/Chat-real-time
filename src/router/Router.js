@@ -12,12 +12,12 @@ export function Router() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route path="home" element={<Home />} />
           <Route path="profile/*" element={<Profile />} />
           <Route path="chat/*" element={<Chat />}>
             <Route path=":chatId" element={<MessagesList />} />
           </Route>
-          <Route path="animals" element={<Animals />} />
+          <Route index element={<Animals />} />
           <Route path="chatFirebase/*" element={<ChatFirebase />} />
           <Route path="*" element={"Ошибка"} />
         </Route>

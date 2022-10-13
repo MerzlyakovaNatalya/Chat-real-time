@@ -8,6 +8,7 @@ import { Loader } from "../loader";
 
 export const AnimalsRender = ({ data, isError, isLoading, getData }) => {
   useEffect(() => {
+    alert("Мобильная версия сайта находится в разработке");
     getData();
     // eslint-disable-next-line
   }, []);

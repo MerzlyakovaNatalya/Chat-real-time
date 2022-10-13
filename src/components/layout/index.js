@@ -21,13 +21,13 @@ export const Layout = () => {
       <div className={style.wrap}>
         <header className={style.header}>
           <div className={style.wrapper_link}>
-            <Link to="/" className={style.a}>
+            <Link to="/home" className={style.a}>
               HOME
             </Link>
             <Link to="/profile" className={style.a}>
               PROFILE
             </Link>
-            <Link to="/animals" className={style.a}>
+            <Link to="/" className={style.a}>
               ANIMALS
             </Link>
             <Link to="/chat" className={style.a}>
